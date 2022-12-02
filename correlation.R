@@ -1,0 +1,7 @@
+data1 <- c(60,65,70,80,100,120)
+data2 <- c(10,7,6,5,3,9)
+corr_coef <- cor(data1,data2, method = 'spearman')
+print(corr_coef)
+corr_coef <- cor(data1,data2, method = 'pearson')
+print(corr_coef)
+plot(data1, data2, col='black', pch=16)

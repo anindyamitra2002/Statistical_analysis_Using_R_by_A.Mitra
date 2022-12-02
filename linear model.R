@@ -1,0 +1,5 @@
+data1 <- c(60,65,70,80,100,120,130,145)
+data2 <- c(2,3,6,8,9,10,13,15)
+relation <- lm(data2~data1)
+print(relation)
+plot(data1,data2, col="blue", main = "data1 vs data2 graph", abline(lm(data2~data1)),cex = 1.0,pch = 16,xlab = "data1",ylab = "data2")
